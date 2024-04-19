@@ -12,6 +12,7 @@ public class Author {
     private String firstName;
     private String lastName;
 
+    // maps to attribut in Book class
     @ManyToMany(mappedBy = "authors")
     Set<Book> books;
 
